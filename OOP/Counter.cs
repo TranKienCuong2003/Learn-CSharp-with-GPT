@@ -1,6 +1,3 @@
-// Counter.cs
-using System;
-
 namespace OOP
 {
     public class Counter
