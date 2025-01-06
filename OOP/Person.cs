@@ -1,5 +1,3 @@
-using System;
-
 namespace OOP
 {
     public class Person
@@ -15,7 +13,7 @@ namespace OOP
 
         public void DisplayInfo()
         {
-            Console.WriteLine($"Name: {Name}, Age: {Age}");
+            Console.WriteLine($"Tên: {Name}, Tuổi: {Age}");
         }
     }
 }
