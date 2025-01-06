@@ -1,21 +1,20 @@
-// BankAccount.cs
-using System;
-
 namespace OOP
 {
     public class BankAccount
     {
-        private double balance;
+        private decimal balance;
 
-        public void Deposit(double amount)
+        public BankAccount()
         {
-            if (amount > 0)
-            {
-                balance += amount;
-            }
+            balance = 0;
         }
 
-        public double GetBalance()
+        public void Deposit(decimal amount)
+        {
+            balance += amount;
+        }
+
+        public decimal GetBalance()
         {
             return balance;
         }
