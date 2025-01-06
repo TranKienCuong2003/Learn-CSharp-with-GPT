@@ -1,8 +1,9 @@
 ﻿using System;
-using StringAdvanced; // Namespace chứa các lớp xử lý chuỗi
-using NumberHandling; // Namespace chứa các lớp xử lý số
-using ArrayAndListHandling; // Namespace chứa các lớp xử lý mảng và danh sách
-using OOP; // Namespace chứa các lớp hướng đối tượng
+using StringAdvanced;
+using NumberHandling;
+using ArrayAndListHandling;
+using OOP;
+using AdvancedTopics;
 
 public class Program
 {
@@ -107,29 +108,58 @@ public class Program
         // Bài tập chủ đề 4: Hướng đối tượng
         Console.WriteLine("Chủ đề 4: Hướng đối tượng");
 
-        // Test Person class
-        Person person = new Person("John", 30);
+        OOP.Person person = new OOP.Person("John", 30);
         person.DisplayInfo();
         Console.WriteLine();
 
-        // Test Dog class
         Dog dog = new Dog("Buddy");
         dog.Speak();
         dog.Bark();
         Console.WriteLine();
 
-        // Test BankAccount class
         BankAccount account = new BankAccount();
         account.Deposit(100);
         Console.WriteLine($"Account balance: {account.GetBalance()}");
         Console.WriteLine();
 
-        // Test Counter class
         new Counter();
         new Counter();
         Console.WriteLine($"Count: {Counter.Count}");
 
         Counter.ResetCount();
         Console.WriteLine($"Count after reset: {Counter.Count}");
+
+        // Bai tap chu de 5: Các chủ đề nâng cao
+        Console.WriteLine("Chu de 5: Cac chu de nang cao");
+
+        FileOperations.Run();
+        Console.WriteLine();
+
+        ExceptionHandling.Run();
+        Console.WriteLine();
+
+        LinqExample.Run();
+        Console.WriteLine();
+
+        AsyncProgramming.Run().Wait();
+        Console.WriteLine();
+
+        DelegatesAndEvents.Run();
+        Console.WriteLine();
+
+        ReflectionExample.Run();
+        Console.WriteLine();
+
+        GenericExample.Run();
+        Console.WriteLine();
+
+        CustomAttributeExample.Run();
+        Console.WriteLine();
+
+        DependencyInjectionExample.Run();
+        Console.WriteLine();
+
+        CustomCollectionExample.Run();
+        Console.WriteLine();
     }
 }
